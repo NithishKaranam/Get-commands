@@ -1,0 +1,14 @@
+package com.task;
+import java.util.*;
+
+import javax.print.DocFlavor.STRING;
+
+public class HashSetDemo {
+
+	public static void main(String[] args) {
+		TreeSet<STRING> t=new Treeset<String>();
+		t.add("adc");
+		t.add("dcd");
+		System.out.println(t);
+}
+}

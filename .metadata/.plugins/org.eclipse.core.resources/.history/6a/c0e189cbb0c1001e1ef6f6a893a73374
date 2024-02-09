@@ -1,0 +1,45 @@
+package com.task1;
+import java.util.*;
+public class Demo {
+     public static void main(String[] args) {
+		Employee e1=new Employee("vamshi","hyderabad");
+		Employee e2=new Employee("gopi","kphp");
+		Employee e3=new Employee("krishna","nizampet");
+		System.out.println("1.Read Employee");
+		System.out.println("2.Read multi Employee");
+		System.out.println("3.Delet a Employee");
+		System.out.println("4.update a Employee");
+		System.out.println("\n");
+		System.out.println("please seslect your option");
+		Map<Integer,Employee> m=new HashMap<Integer,Employee>();
+		m.put(100, e1);
+		m.put(102,e2);
+		m.put(103, e3);
+		Scanner sc=new Scanner(System.in);
+		int option=sc.nextInt();
+		switch(option)
+		{
+		case 1:{
+			System.out.println("your option is to read Employee record");
+			System.out.println("select Employee Record");
+			int getId=sc.nextInt();
+			Employee read=m.get(getId);
+			System.out.println(read);
+			break;
+			
+		}
+		case 2:
+		{
+			System.out.println("your opion is to read multiple records");
+			System.out.println("your fetching multiple records");
+			Set set=m.entrySet();
+			Iterator itr=set.iterator();
+			while(itr.hasNext());
+		}
+		default:{
+			System.out.println("Entered options doesn't exist");
+		}
+		}
+		
+	}
+}

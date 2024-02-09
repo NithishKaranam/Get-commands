@@ -1,0 +1,16 @@
+package com.task;
+import java.util.*;
+
+public class HashSetDemo {
+
+	public static void main(String[] args) {
+		Set s=new HashSet();
+		s.add(10);
+		s.add(20);
+		s.add("gopi");
+		s.add(null);
+		System.out.println(s);
+        System.out.println(s.size());
+	}
+
+}

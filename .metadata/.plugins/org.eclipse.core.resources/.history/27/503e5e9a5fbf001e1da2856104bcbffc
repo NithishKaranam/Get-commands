@@ -1,0 +1,9 @@
+package com.task;
+public class Demo {
+	public static void main(String[] args) {
+		StringBuffer s=new  StringBuffer("welcome to task");
+		StringBuffer S=new StringBuffer("Welcome to task");
+		s.append("welcome");
+		System.out.println(s);
+	}
+}

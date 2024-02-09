@@ -1,0 +1,11 @@
+package com.task;
+interface parent1{
+}
+class parent2{
+}
+class Child extends parent2 implements parent1{
+}
+public class inheritance{
+	public static void main(String[] args) {
+	}
+}

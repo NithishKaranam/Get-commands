@@ -1,0 +1,14 @@
+package com.task;
+import java.util.*;
+
+public class HashSetDemo {
+
+	public static void main(String[] args) {
+		Set s=new TreeSet();
+		s.add(10);
+		s.add(20);
+		s.add(30);
+		System.out.println(s);
+	}
+
+}

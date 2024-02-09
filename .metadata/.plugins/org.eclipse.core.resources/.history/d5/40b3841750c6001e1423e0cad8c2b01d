@@ -1,0 +1,19 @@
+package com.task.dao;
+
+import com.task.bean.Employee;
+import com.task.util.EmployeeUtil;
+
+public class EmployeeDaoImpl implements EmployeeDaoI{
+	
+	public void insertEmployee(Employee emp) {
+		String empname=emp.getEmpName();
+		String empAddress=emp.getEmpName();
+	   connection = EmployeeUtil.getDBConnection();
+	     pst=connection.prepareStatement("insert into employee values(?,?)");
+	     pst.setString(1,"gopi");
+	     pst.setString(2,"hyderabad");
+	     pst.executeUpdate();
+	     System.out.println("one record inserted");
+	}
+
+}

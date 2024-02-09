@@ -1,0 +1,12 @@
+package com.task;
+
+public class Demo_class{
+	public static void main(String[] args) {
+		Employee e1=new Employee();
+		e1.set EmpId(100);
+		e1.set EmpName("gopi");
+		e1.set Empaddress("hyderabad");
+		System.out.println(e1.get EmpId()+" "+e1.get EmpName()+" "+e1.get EmpAddress());
+	}
+
+}

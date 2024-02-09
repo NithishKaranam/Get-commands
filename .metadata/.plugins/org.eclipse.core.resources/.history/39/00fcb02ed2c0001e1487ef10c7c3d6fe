@@ -1,0 +1,10 @@
+package com.task;
+import java.lang.*;
+public class Runnable_Demo implements Runnable{
+	public void run() {
+		for(int j=0;j<=10;j++);
+			System.out.println("j value is="+j);
+			
+			
+	}
+}

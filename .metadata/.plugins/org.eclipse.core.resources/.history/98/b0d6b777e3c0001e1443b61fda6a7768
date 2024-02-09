@@ -1,0 +1,37 @@
+package com.task;
+class Table
+{
+	void printtable(int n) {
+		for(int i=1;i<=5;i++) {
+		System.out.println(n * i);
+	}
+	}
+}
+class MyThread1 extends Thread
+{
+	Table t;
+	MyThread1(Table t){
+         this.t=t;}
+         public void run() {
+        	 t.printtable(5);
+         }
+	}
+
+class MyThread2{
+	Table t;
+	MyThread2(Table t){
+         this.t=t;}
+         public void run() {
+        	 t.printtable(7);
+         }
+         
+}
+public class ThreadEx {
+            public static void main(String[] args) {
+            	Table t1=new Table();
+            	MyThread1 m1=new MyThread1(t1);
+        		MyThread2 m2=new MyThread2(t1);
+        		m1.start();
+        		m2.start();			
+            }
+}

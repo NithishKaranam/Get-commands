@@ -1,0 +1,18 @@
+package com.task;
+
+import java.sql.*;
+public class Test {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		// step1 load driver class
+		Class.forName("com.mysql.cj.jdbc.driver");
+		// step2 Establish the connection
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/task","root","@charan01");		
+		// step3 create Statements
+		Statement st=con.createStatement();
+		// step4
+		// step5
+			
+	}
+
+}

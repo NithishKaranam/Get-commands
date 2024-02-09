@@ -1,0 +1,17 @@
+package com.task ;
+class parent{
+	public void showInfo() {
+		System.out.println("this is Hie rarchical inheritance example");
+	}
+}
+class Child1 extends parent{
+	
+}
+class Child2 extends parent{
+}
+public class DemoInheritance{
+	public static void main(string[] args) {
+		Child1 c=new Child1();
+		c.showInfo();
+	}
+}

@@ -1,0 +1,8 @@
+package com.task;
+public class Demo {
+	public static void main(String[] args) {
+		StringBuilder s=new  StringBuilder("welcome to task");
+		s.append("welcome");
+		System.out.println(s);
+	}
+}

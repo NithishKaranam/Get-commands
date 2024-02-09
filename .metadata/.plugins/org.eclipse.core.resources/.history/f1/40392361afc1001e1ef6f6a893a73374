@@ -1,0 +1,15 @@
+package com.task1;
+
+public class Demo {
+     public static void main(String[] args) {
+		Employee e1=new Employee("vamshi","hyderabad");
+		Employee e2=new Employee("gopi","kphp");
+		Employee e3=new Employee("krishna","nizampet");
+		System.out.println("1.Read Employee");
+		System.out.println("2.Read multi Employee");
+		System.out.println("3.Delet a Employee");
+		System.out.println("4.update a Employee");
+		System.out.println("\n");
+		System.out.println("please seslect your option");
+	}
+}
